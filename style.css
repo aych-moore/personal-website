@@ -17,6 +17,13 @@ h1{
 
 .link-icon{
 	width:40px;
+	display:block;
+	margin:0 auto;
+}
+.link-label{
+	margin-top:5px;
+	text-align: center;
+	color:white;
 }
 
 .row{
@@ -34,6 +41,9 @@ h1{
 	}
 	.link-icon{
 		width:60px;
+	}
+	.link-label{
+		font-size:2rem;
 	}
 	h1{
 		font-size:7rem;
