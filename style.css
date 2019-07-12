@@ -1,0 +1,52 @@
+.background{
+	height:100vh;
+	background-image: radial-gradient(#8000a3, #2c0038);
+}
+
+.title{
+	margin-top:20vh !important;
+	margin: 0 auto;
+	width:100%;
+	
+}
+h1{
+	text-align:center !important;
+	font-size:5rem;
+	color:white;
+}
+
+.link-icon{
+	width:40px;
+}
+
+.row{
+	padding:0;
+	margin:0;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.title {
+		width:768px;
+	}
+	.link-icon{
+		width:60px;
+	}
+	h1{
+		font-size:7rem;
+	}
+  
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
