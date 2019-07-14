@@ -1,6 +1,6 @@
-.background{
+#background{
 	height:100vh;
-	background-image: radial-gradient(#2e2e2e, #0f0f0f);
+	background: #333333;
 }
 
 .title{
