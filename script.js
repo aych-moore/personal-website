@@ -1,63 +1,104 @@
 var backgroundColor = "#333333";
 
-var linkGithub = document.querySelector('.link-github');
-var linkLinkedin = document.querySelector('.link-linkedin');
-var linkYoutube = document.querySelector('.link-youtube');
-var linkPortfolio = document.querySelector('.link-portfolio');
-var linkResume = document.querySelector('.link-resume');
-var linkContact = document.querySelector('.link-contact');
+var linkGithub;
+var linkLinkedin;
+var linkYoutube;
+var linkPortfolio;
+var linkResume;
+var linkContact;
 
-linkGithub.addEventListener("mouseover", mouseOverGithub);
-linkGithub.addEventListener("mouseout", mouseOutGithub);
-linkLinkedin.addEventListener("mouseover", mouseOverLinkedin);
-linkLinkedin.addEventListener("mouseout", mouseOutLinkedin);
-linkYoutube.addEventListener("mouseover", mouseOverYoutube);
-linkYoutube.addEventListener("mouseout", mouseOutYoutube);
-linkPortfolio.addEventListener("mouseover", mouseOverPortfolio);
-linkPortfolio.addEventListener("mouseout", mouseOutPortfolio);
-linkResume.addEventListener("mouseover", mouseOverResume);
-linkResume.addEventListener("mouseout", mouseOutResume);
-linkContact.addEventListener("mouseover", mouseOverContact);
-linkContact.addEventListener("mouseout", mouseOutGContact);
+var linkDocumentObjects = [linkGithub, linkLinkedin, linkYoutube, linkPortfolio, linkResume, linkContact];
+var linkClassSelectors = ['.link-github', '.link-linkedin', '.link-youtube', '.link-portfolio', '.link-resume', '.link-contact'];
+var linkMouseOvers = [mouseOverGithub,mouseOverLinkedin,mouseOverYoutube,mouseOverPortfolio,mouseOverResume,mouseOverContact];
+var linkMouseOuts = [mouseOutGithub,mouseOutLinkedin,mouseOutYoutube,mouseOutPortfolio,mouseOutResume,mouseOutGContact];
+
+for (i = 0; i < linkDocumentObjects.length; i++){
+	linkDocumentObjects[i] = document.querySelector(linkClassSelectors[i]);
+	linkDocumentObjects[i].addEventListener("mouseover", linkMouseOvers[i]);
+	linkDocumentObjects[i].addEventListener("mouseout", linkMouseOuts[i]);
+}
+
 
 function mouseOverGithub(event){
-  document.getElementById("background").style.background = "black";
+  document.getElementById("background").style.background = '#aaa';
 }
 function mouseOutGithub(event){
   document.getElementById("background").style.background = backgroundColor;
 }
 
 function mouseOverLinkedin(event){
-  document.getElementById("background").style.background = "blue";
+  document.getElementById("background").style.background = '#0073b1';
 }
 function mouseOutLinkedin(event){
   document.getElementById("background").style.background = backgroundColor;
 }
 
 function mouseOverYoutube(event){
-  document.getElementById("background").style.background = "red";
+  document.getElementById("background").style.background = "#cc0000";
 }
 function mouseOutYoutube(event){
   document.getElementById("background").style.background = backgroundColor;
 }
 
 function mouseOverPortfolio(event){
-  document.getElementById("background").style.background = "orange";
+  document.getElementById("background").style.background = "#cc8100";
 }
 function mouseOutPortfolio(event){
   document.getElementById("background").style.background = backgroundColor;
 }
 
 function mouseOverResume(event){
-  document.getElementById("background").style.background = "green";
+  document.getElementById("background").style.background = "#00b10c";
 }
 function mouseOutResume(event){
   document.getElementById("background").style.background = backgroundColor;
 }
 
 function mouseOverContact(event){
-  document.getElementById("background").style.background = "purple";
+  document.getElementById("background").style.background = "#5900b1";
 }
 function mouseOutGContact(event){
   document.getElementById("background").style.background = backgroundColor;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
