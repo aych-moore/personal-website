@@ -1,6 +1,6 @@
-.background{
+#background{
 	height:100vh;
-	background-color:#2e2e2e;
+	background: #333333;
 }
 
 .title{
