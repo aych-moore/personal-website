@@ -1,24 +1,28 @@
-#background{
-	height:100vh;
-	background: #333333;
+body{
+	background-color:#333333;
 }
 
-.title{
-	margin-top:20vh !important;
-	margin: 0 auto;
-	width:100%;
-	
-}
+
+
+/*================================TITLE NAV*/
 h1{
-	text-align:center !important;
-	font-size:5rem;
+	text-align:center;
+	font-size:20vw;
 	color:white;
+	margin:30px 0;
 }
-
+#title-nav-icon-row div{
+	padding:0;
+}
+.title-nav{
+	margin:auto;
+	margin-top:2vh;
+}
 .link-icon{
-	width:40px;
+	width:50%;
 	display:block;
-	margin:0 auto;
+	margin:auto;
+	margin-top:20px;
 }
 .link-label{
 	margin-top:5px;
@@ -26,37 +30,33 @@ h1{
 	color:white;
 }
 
-.row{
-	padding:0;
-	margin:0;
-}
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+/* Extra small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap
 
-/* Small devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	.title {
+   Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)(*/
+@media (min-width: 768px) {
+	h1{
+		font-size:6rem;
+	}
+	.title-nav{
 		width:768px;
 	}
-	.link-icon{
-		width:60px;
+	.title-nav{
+		margin:auto;
+		margin-top:15vh;
 	}
-	.link-label{
-		font-size:2rem;
-	}
-	h1{
-		font-size:7rem;
-	}
-  
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
 
 }
