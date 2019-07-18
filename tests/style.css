@@ -1,0 +1,62 @@
+#background{
+	height:100vh;
+	background: #333333;
+}
+
+.title{
+	margin-top:20vh !important;
+	margin: 0 auto;
+	width:100%;
+	
+}
+h1{
+	text-align:center !important;
+	font-size:5rem;
+	color:white;
+}
+
+.link-icon{
+	width:40px;
+	display:block;
+	margin:0 auto;
+}
+.link-label{
+	margin-top:5px;
+	text-align: center;
+	color:white;
+}
+
+.row{
+	padding:0;
+	margin:0;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.title {
+		width:768px;
+	}
+	.link-icon{
+		width:60px;
+	}
+	.link-label{
+		font-size:2rem;
+	}
+	h1{
+		font-size:7rem;
+	}
+  
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
