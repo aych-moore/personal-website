@@ -1,4 +1,4 @@
-let backgroundColor = "#333333";
+let backgroundColor = "#ffffff";
 
 let linkGithub;
 let linkLinkedin;
@@ -21,23 +21,23 @@ for (i = 0; i < linkDocumentObjects.length; i++){
 
 
 function mouseOverGithub(event){
-  document.body.style.background = '#aaa';
+  document.body.style.background = '#ffffff';
 }
 function mouseOutGithub(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverLinkedin(event){
-  document.body.style.background = '#0073b1';
+  document.body.style.background = '#ffffff';
 }
 function mouseOutLinkedin(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverYoutube(event){
-  document.body.style.background = "#cc0000";
-  document.getElementById("letterboxing-top").style.height = "8vh";
-  document.getElementById("letterboxing-bottom").style.height = "8vh";
+  document.body.style.background = "#ffffff";
+  document.getElementById("letterboxing-top").style.height = "7vh";
+  document.getElementById("letterboxing-bottom").style.height = "7vh";
 }
 function mouseOutYoutube(event){
   document.body.style.background = backgroundColor;
@@ -46,21 +46,21 @@ function mouseOutYoutube(event){
 }
 
 function mouseOverPortfolio(event){
-  document.body.style.background = "#cc8100";
+  document.body.style.background = "#ffffff";
 }
 function mouseOutPortfolio(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverResume(event){
-  document.body.style.background = "#cccccc";
+  document.body.style.background = "#ffffff";
 }
 function mouseOutResume(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverContact(event){
-  document.body.style.background = "#5900b1";
+  document.body.style.background = "#ffffff";
 }
 function mouseOutGContact(event){
   document.body.style.background = backgroundColor;

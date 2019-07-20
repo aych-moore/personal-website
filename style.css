@@ -1,6 +1,6 @@
 :root {
 	/*colours*/
-	--main-bg-color: #333333;
+	--main-bg-color: #ffffff;
 	/*sizes*/
 	--letterboxing-height: 8vh;
 }
@@ -8,6 +8,7 @@
 
 body{
 	background-color: var(--main-bg-color);
+	transition: .2s ease;
 }
 
 
@@ -37,8 +38,12 @@ h1{
 .link-label{
 	margin-top:5px;
 	text-align: center;
-	color:white;
-
+	color:black;
+	transition: .2s ease;
+	text-decoration: none !important;
+}
+#title-nav-icon-row div a:hover p{
+	font-weight: 700;
 }
 
 /*==========================================HOVER ELEMENTS*/
@@ -55,6 +60,12 @@ h1{
 }
 #letterboxing-bottom{
 	bottom:0;
+}
+
+/*==========================================CONTACT MODAL*/
+.modal-title{
+	color:red;
+	float:left;
 }
 
 
