@@ -19,6 +19,7 @@ for (i = 0; i < linkDocumentObjects.length; i++){
 }
 
 
+
 function mouseOverGithub(event){
   document.body.style.background = '#aaa';
 }
@@ -35,9 +36,13 @@ function mouseOutLinkedin(event){
 
 function mouseOverYoutube(event){
   document.body.style.background = "#cc0000";
+  document.getElementById("letterboxing-top").style.height = "8vh";
+  document.getElementById("letterboxing-bottom").style.height = "8vh";
 }
 function mouseOutYoutube(event){
   document.body.style.background = backgroundColor;
+  document.getElementById("letterboxing-top").style.height = "0vh";
+  document.getElementById("letterboxing-bottom").style.height = "0vh";
 }
 
 function mouseOverPortfolio(event){

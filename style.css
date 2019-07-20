@@ -1,10 +1,18 @@
+:root {
+	/*colours*/
+	--main-bg-color: #333333;
+	/*sizes*/
+	--letterboxing-height: 8vh;
+}
+  
+
 body{
-	background-color:#333333;
+	background-color: var(--main-bg-color);
 }
 
 
 
-/*================================TITLE NAV*/
+/*==========================================TITLE NAV*/
 h1{
 	text-align:center;
 	font-size:20vw;
@@ -30,8 +38,27 @@ h1{
 	margin-top:5px;
 	text-align: center;
 	color:white;
+
 }
 
+/*==========================================HOVER ELEMENTS*/
+#letterboxing-top, #letterboxing-bottom{
+	background-color: black;
+	width: 100vw;
+	position:fixed;
+	left:0;
+	height:0;
+	transition: .5s ease;
+}
+#letterboxing-top{
+	top:0;
+}
+#letterboxing-bottom{
+	bottom:0;
+}
+
+
+/*==========================================MEDIA QUERIES*/
 
 /* Extra small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap
