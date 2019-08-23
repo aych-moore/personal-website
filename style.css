@@ -47,6 +47,10 @@ h1{
 	font-weight: 700;
 }
 
+#title-nav-icon-row div a:hover{
+	text-decoration: none;
+}
+
 /*==========================================HOVER ELEMENTS*/
 #letterboxing-top, #letterboxing-bottom{
 	background-color: black;
