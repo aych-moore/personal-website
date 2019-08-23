@@ -1,4 +1,4 @@
-let backgroundColor = "#ffffff";
+let backgroundColor = "#222222";
 
 let linkGithub;
 let linkLinkedin;
@@ -21,21 +21,21 @@ for (i = 0; i < linkDocumentObjects.length; i++){
 
 
 function mouseOverGithub(event){
-  document.body.style.background = '#ffffff';
+  document.body.style.background = backgroundColor;
 }
 function mouseOutGithub(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverLinkedin(event){
-  document.body.style.background = '#ffffff';
+  document.body.style.background = backgroundColor;
 }
 function mouseOutLinkedin(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverYoutube(event){
-  document.body.style.background = "#ffffff";
+  document.body.style.background = backgroundColor;
   document.getElementById("letterboxing-top").style.height = "7vh";
   document.getElementById("letterboxing-bottom").style.height = "7vh";
 }
@@ -46,21 +46,21 @@ function mouseOutYoutube(event){
 }
 
 function mouseOverPortfolio(event){
-  document.body.style.background = "#ffffff";
+  document.body.style.background = backgroundColor;
 }
 function mouseOutPortfolio(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverResume(event){
-  document.body.style.background = "#ffffff";
+  document.body.style.background = backgroundColor;
 }
 function mouseOutResume(event){
   document.body.style.background = backgroundColor;
 }
 
 function mouseOverContact(event){
-  document.body.style.background = "#ffffff";
+  document.body.style.background = backgroundColor;
 }
 function mouseOutGContact(event){
   document.body.style.background = backgroundColor;
