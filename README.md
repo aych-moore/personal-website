@@ -14,7 +14,7 @@ Contact: Email + phone vector graphics show up.
 
 Make JS more consise. There is lots of repeated code.
 
-Create Icons.
+Create Icons. Embossed into background/hollowed out?
 
 On mobile split links into two rows.
 
