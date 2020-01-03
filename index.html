@@ -14,77 +14,223 @@
 
 		<!-- Style CSS -->
 		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div class="title-nav">
-				<div class="row">
-					<div class="col-12">
-						<h1>Hayden Moore</h1>
+		<div class="overlay" id="top">
+			<div class="container-fluid">
+				<div class="title-nav">
+					<div class="row">
+						<div class="col-12">
+							<h1>Hayden Moore</h1>
+							<h4>MAKER & INNOVATOR</h4>
+						</div>
 					</div>
-				</div>
-				<div class="row" id="title-nav-icon-row">
-					<div class="col-4 col-sm-4 col-md-2">
-						<a href="#" class="link-portfolio">
-							<img src="img/projects2.png" alt="portfolio icon" class="link-icon">
-							<p class="link-label">Portfolio</p>
-						</a>
-					</div>
-					<div class="col-4 col-sm-4 col-md-2">
-						<a href="https://github.com/htmoor" class="link-github">
-							<img src="img/github2.png" alt="github logo" class="link-icon">
-							<p class="link-label">Github</p>
-						</a>
-					</div>
-					<div class="col-4 col-sm-4 col-md-2">
-						<a href="https://www.youtube.com/channel/UCE41jpV5sBO96TDqMbzfeRw/videos" class="link-youtube">
-							<img src="img/youtube2.png" alt="youtube logo" class="link-icon">
-							<p class="link-label">Youtube</p>
-						</a>
-					</div>
-					<div class="col-4 col-sm-4 col-md-2">
-						<a href="https://www.linkedin.com/in/hayden-moore-02a6ba140/" class="link-linkedin">
-							<img src="img/linkedin2.png" alt="linkedin logo" class="link-icon">
-							<p class="link-label">Linkedin</p>
-						</a>
-					</div>
-					<div class="col-4 col-sm-4 col-md-2">
-						<a href="#" class="link-contact" data-toggle="modal" data-target="#modal-contact">
-							<img src="img/email2.png" alt="email icon" class="link-icon">
-							<p class="link-label">Contact</p>
-						</a>
-					</div>
-					<div class="col-4 col-sm-4 col-md-2">
-						<a href="#" class="link-resume">
-							<img src="img/resume2.png" alt="resume icon" class="link-icon">
-							<p class="link-label">Résumé</p>
-						</a>
+					<div class="row" id="title-nav-icon-row">
+						<div class="col-4 col-sm-2 col-md-2">
+							<a href="#" class="link-portfolio" onclick="smoothScroll(document.getElementById('portfolio-section'))">
+								<img src="img/projects2.png" alt="portfolio icon" class="link-icon">
+								<p class="link-label">Portfolio</p>
+							</a>
+						</div>
+						<div class="col-4 col-sm-2 col-md-2">
+							<a href="https://github.com/htmoor" class="link-github">
+								<img src="img/github2.png" alt="github logo" class="link-icon">
+								<p class="link-label">Github</p>
+							</a>
+						</div>
+						<div class="col-4 col-sm-2 col-md-2">
+							<a href="https://www.youtube.com/channel/UCE41jpV5sBO96TDqMbzfeRw/videos" class="link-youtube">
+								<img src="img/youtube2.png" alt="youtube logo" class="link-icon">
+								<p class="link-label">Youtube</p>
+							</a>
+						</div>
+						<div class="col-4 col-sm-2 col-md-2">
+							<a href="https://www.linkedin.com/in/hayden-moore-02a6ba140/" class="link-linkedin">
+								<img src="img/linkedin2.png" alt="linkedin logo" class="link-icon">
+								<p class="link-label">Linkedin</p>
+							</a>
+						</div>
+						<div class="col-4 col-sm-2 col-md-2">
+							<a href="#" class="link-contact" onclick="smoothScroll(document.getElementById('contact-section'))">
+								<img src="img/email2.png" alt="email icon" class="link-icon">
+								<p class="link-label">Contact</p>
+							</a>
+						</div>
+						<div class="col-4 col-sm-2 col-md-2">
+							<a href="#" class="link-resume">
+								<img src="img/resume2.png" alt="resume icon" class="link-icon">
+								<p class="link-label">Résumé</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Contact modal -->
-		<div id="modal-contact" class="modal fade" role="dialog">
-			<div class="modal-dialog modal-lg">
-			<!-- Modal content-->
-			<div class="modal-content">
-				<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Modal Header</h4>
+
+		<!-- Portfolio -->
+		<div class="container-fluid">
+			<div class="section" id="portfolio-section">
+				<div class="row">
+					<div class="col-12">
+						<h2>Portfolio</h2>
+						<p>Some my favourite projects. I love to talk about them so feel free to ask me questions!</p>
+					</div>
 				</div>
-				<div class="modal-body">
-				<p>Some text in the modal.</p>
+				<div class="row" id="portfolio">
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/wireCutter.png">
+							<div class="card-label">
+								<h3>Wire Cutter</h3>
+								<p>I needed to cut thousands of pieces of wire to precise lengths. Instead of spending hours cutting those wires by hand, I created an automated machine to do it!</p><br>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/periodic-table.png">
+							<div class="card-label">
+								<h3>Periodic Table</h3>
+								<p>My girlfriend and I have an element collection. It's like collecting the building-blocks of the universe! Each one has unique properties and asthetics. Together, we build this LED display complete with a phone app to control various light-up configurations and animations.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/glasses.png">
+							<div class="card-label">
+								<h3>Privacy Glasses</h3>
+								<p>I have modified an LCD monitor to display a blank screen. To everyone else the monitor is broken. However, the wearer of these glasses can view the contents of the screen with ease.</p><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/maze.png">
+							<div class="card-label">
+								<h3>Maze</h3>
+								<p>I designed this maze as a starter project for students at Unleash Space to create on the CNC router and laser cutter. Tilt the maze to direct the little ball bearing to the center!</p><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/tesla-coil.png">
+							<div class="card-label">
+								<h3>Tesla Coil</h3>
+								<p>A Tesla Coil is an air-core transformer. My coil is capable of generating 500,000 volt meter-long lightning bolts.</p><br><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/password-manager.png">
+							<div class="card-label">
+								<h3>Password Manager</h3>
+								<p>Do you find it hard to remember strong unique passwords for different sites? This device remembers all your passwords and automaically types them by emulating a USB keyboard. Controlled by a phone app over bluetooth.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/capacitor-bank.png">
+							<div class="card-label">
+								<h3>Capacitor Bank</h3>
+								<p>This capacitor bank is made from brine-filled glass bottles wrapped in foil. It is capable of storing and releasing charge like a battery.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/chronograph.png">
+							<div class="card-label">
+								<h3>Chronograph</h3>
+								<p>My chronograph uses a infrared dual light gate to measure the speed of a projectile traveling through the gates.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/flat-noticeboard.png">
+							<div class="card-label">
+								<h3>Digital Noticeboard</h3>
+								<p>The digital noticeboard lives in my flat's kitchen and displays a daily joke, wallpaper and a weekly rotating job roster.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/ohm.png">
+							<div class="card-label">
+								<h3>Ohm</h3>
+								<p>I have co-founded an early start-up developing performance enhancing heat suits for cycling.</p><br>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/robot.png">
+							<div class="card-label">
+								<h3>Little Robot</h3>
+								<p>This little robot created by me and my girlfriend can navigate autonomously. This photo also came second in the 2014 University of Auckland Science photo competition.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="card">
+							<img src="img/dodec.png">
+							<div class="card-label">
+								<h3>Dodecahedron</h3>
+								<p>I made this dodecahedron infinity mirror as an attention grabbing artifact for Shwoop (A digital engatement start-up I am part of).</p><br>
+							</div>
+						</div>
+					</div>
+	
 				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				</div>
-			</div>
-		
 			</div>
 		</div>
+
+		
+
+
+		<!-- Contact -->
+		<div class="container-fluid">
+			<div class="section" id="contact-section">
+				<div class="row">
+					<div class="col-12">
+						<h2>Contact</h2>
+						<p>Get in touch</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-lg-6">
+						<img src="img/email2.png" alt="email icon" class="contact-icon">
+						<h4>htmoor@gmail.com</h4>
+					</div>
+					<div class="col-12 col-sm-12 col-lg-6">
+						<img src="img/phone.png" alt="phone icon" class="contact-icon">
+						<h4>027 47 37 218</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="overlay footer-overlay">
+			<div class="container-fluid">
+				<div class="section" id="footer-section">
+					<h5>Made by Hayden Moore</h5>
+				</div>
+			</div>
+		</div>
+
+		<!-- Return to top button -->
+		<button onclick="smoothScroll(document.getElementById('top'))" id="returnToTop" title="Go to top">Top</button>
+
 
 		<!-- Black bars for youtube hover -->
 		<div id="letterboxing-top"></div>
