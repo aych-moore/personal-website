@@ -1,3 +1,8 @@
+:root {
+  --primary: black;
+  --secondary: white;
+}
+
 *{
     margin:0;
     padding: 0;
@@ -20,7 +25,26 @@ h1{
     text-align: center;
     margin:0;
     margin-top:10vh;
-    color:black;
+    color:var(--primary);
+}
+
+.nav{
+  position: fixed;
+  right:0;
+  top:0;
+  margin:20px;
+  list-style: none;
+  z-index: 2;
+
+}
+
+.nav a img{
+  width:50px;
+  margin:10px;
+}
+
+.nav a:hover .img{
+  width:60px;
 }
 
 /* ============================================== TEXT MORPHING */
@@ -39,14 +63,14 @@ h1{
   text-align: center;
   
   user-select: none;
-  color:black;
+  color:var(--primary);
 }
 
 
 
   .main{
-    /* background-image:url("/img/17.png"); */
-    background-color:white;
+    /* background-image:url("/img/16.png"); */
+    background-color:var(--secondary);
     background-attachment: fixed; 
     background-size: cover;
   }
@@ -60,7 +84,7 @@ h1{
   /* ================================================== FOOTER BLOBS */
   body .footer {
     z-index: 1;
-    --footer-background:black;
+    --footer-background:var(--primary);
     display: grid;
     position: relative;
     grid-area: footer;
@@ -88,15 +112,18 @@ h1{
     z-index: 2;
     padding: 2rem;
     background: var(--footer-background);
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
+    
   }
 
 
 
   body .footer .content .column{
-    float: left;
-    width: 50%;
     text-align:center;
-    margin:50px 0px;
+    padding:5vw;
   }
 
   body .footer .content .column h3 a{
@@ -233,7 +260,7 @@ h1{
 
 .container .card .card-content h3{
     font-size:2.3em;
-    color: black;
+    color: var(--primary);
     z-index: 1;
     position: absolute;
     top:10px;
@@ -241,6 +268,6 @@ h1{
 
 .container .card .card-content p{
     font-size:1.3em;
-    color: black;
+    color: var(--primary);
     font-weight: 300;
 }
