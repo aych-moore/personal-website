@@ -94,6 +94,23 @@ h1{
     background-size: cover;
   }
 
+/* ================================================== SCROLL BAR */
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+
   /* ================================================== SPACER */
   .spacer{
     height:5vh;
