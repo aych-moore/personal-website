@@ -27,24 +27,43 @@ h1{
     margin-top:10vh;
     color:var(--primary);
 }
-
+/* ============================================== NAV */
 .nav{
-  position: fixed;
-  right:0;
-  top:0;
-  margin:20px;
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top:6vh;
   list-style: none;
   z-index: 2;
+  
 
 }
 
 .nav a img{
   width:50px;
-  margin:10px;
+  margin:0 2em;
+  transition: transform .2s;
 }
 
-.nav a:hover .img{
-  width:60px;
+.nav a:hover img{
+  transform: scale(1.2);
+
+}
+
+.noDecoration, a:link, a:visited {
+  text-decoration: none;
+}
+
+.nav a p{
+  
+  text-align: center;
+  color:var(--primary);
+  font-weight: 400;
+}
+
+.nav a:hover p{
+  font-weight: 800;
 }
 
 /* ============================================== TEXT MORPHING */
@@ -184,6 +203,7 @@ h1{
     max-width: 1920px;
     align-items: center;
     margin:0 auto;
+    margin-top:-5vh
 
 }
 
